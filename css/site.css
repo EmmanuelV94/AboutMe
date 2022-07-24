@@ -1,0 +1,208 @@
+html {
+    font-size: 16px;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.contenedor {
+    max-width: calc(100vw - 200px);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    width: 100%;
+}
+
+.columna1 {
+    width: calc(8.333333% * 1);
+    flex: 0 0 auto;
+}
+
+.columna2 {
+    width: calc(8.333333% * 2);
+    flex: 0 0 auto;
+}
+
+.columna3 {
+    width: calc(8.333333% * 3);
+    flex: 0 0 auto;
+}
+
+.columna4 {
+    width: calc(8.333333% * 4);
+    flex: 0 0 auto;
+}
+.columna5 {
+    width: calc(8.333333% * 5);
+    flex: 0 0 auto;
+}
+.columna6 {
+    width: calc(8.333333% * 6);
+    flex: 0 0 auto;
+}
+.columna7 {
+    width: calc(8.333333% * 7);
+    flex: 0 0 auto;
+}
+.columna8 {
+    width: calc(8.333333% * 8);
+    flex: 0 0 auto;
+}
+.columna9 {
+    width: calc(8.333333% * 9);
+    flex: 0 0 auto;
+}
+.columna10 {
+    width: calc(8.333333% * 10);
+    flex: 0 0 auto;
+}
+.columna11 {
+    width: calc(8.333333% * 11);
+    flex: 0 0 auto;
+}
+.columna12 {
+    width: calc(8.333333% * 12);
+    flex: 0 0 auto;
+}
+
+.fila > * {
+    max-width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.1rem;
+}
+
+.title {
+    text-transform: uppercase;
+    color: gray;
+}
+
+.link {
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.link.active {
+    background-color: rgb(13 110 253);
+    color: white;
+}
+
+.link:hover {
+    background-color: rgb(13 110 253);
+    color: white;
+    border: 1px solid purple;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: auto;
+    height: 150px;
+    box-shadow: 10px 10px 10px gray;
+    padding: 5px;
+    border: 1px dotted black;
+    margin: 0 auto;
+}
+
+.main-content {
+    text-align: justify;
+}
+
+.aside-left > section > h3 {
+    color: blue;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.aside-left > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.aside-left > section.studies > figure {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aside-left > section.studies > figure > img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.aside-left > section.studies > figure > img,
+.aside-left > section.studies > figure > figcaption {
+    flex: 0 0 auto;
+}
+.aside-left > section.studies > figure > figcaption {
+    width: calc(100% - 110px);
+}
+.aside-left > section.studies > figure > figcaption > * {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.aside-left > section.estilo-img > figure {
+    max-width: 100px;
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1rem 1rem;
+    /* padding: .8rem 1rem; */
+    display: inline-block;
+}
+
+.aside-left > section.estilo-img > figure > img {
+    width: inherit;
+    margin: 0 auto;
+    display: block;
+    transition: all 2s ease-in-out;
+}
+
+.aside-left > section.estilo-img > figure:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.aside-left > section.estilo-img > figure > figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.person {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+footer > .timestamp {
+    float: right;
+}
